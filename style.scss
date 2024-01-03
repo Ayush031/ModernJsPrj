@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "General Sans";
+    font-family: "General Sans Regular";
 }
 
 html,
@@ -29,8 +29,11 @@ body {
     display: flex;
     justify-content: space-between;
     font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 1px;
 
     a {
+        font-size: 1.1rem;
         text-decoration: none;
         color: white;
     }
@@ -64,7 +67,12 @@ body {
 
 #subheader {
     margin-top: 100px;
-    h5{
+    padding-right: 50px;
+    
+    h5 {
         text-align: right;
+        font-size: 1vw;
+        font-weight: 100;
+        margin-top: .5vw;
     }
 }
