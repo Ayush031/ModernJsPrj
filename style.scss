@@ -18,7 +18,7 @@ body {
 }
 
 #main {
-    width: 100%;    
+    width: 100%;
     #home {
         width: 100%;
         height: 100vh;
@@ -38,6 +38,9 @@ body {
                 font-size: 1.1rem;
                 text-decoration: none;
                 color: white;
+            }
+            h4 span {
+                opacity: 0.6;
             }
         }
 
@@ -70,11 +73,9 @@ body {
         #subheader {
             margin-top: 100px;
             padding-right: 50px;
-
-            h5 {
+            margin-bottom: 20px;
+            h4 {
                 text-align: right;
-                font-size: 1vw;
-                font-weight: 100;
                 margin-top: 0.5vw;
             }
         }
@@ -84,7 +85,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            position: absolute;
+            // position: absolute;
             bottom: 3%;
             padding: 0 2.5vw;
             width: 100%;

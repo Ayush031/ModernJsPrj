@@ -40,6 +40,9 @@ body {
   text-decoration: none;
   color: white;
 }
+#main #home #nav h4 span {
+  opacity: 0.6;
+}
 #main #home #header {
   margin-top: 90px;
 }
@@ -68,11 +71,10 @@ body {
 #main #home #subheader {
   margin-top: 100px;
   padding-right: 50px;
+  margin-bottom: 20px;
 }
-#main #home #subheader h5 {
+#main #home #subheader h4 {
   text-align: right;
-  font-size: 1vw;
-  font-weight: 100;
   margin-top: 0.5vw;
 }
 #main #home #home-footer {
@@ -80,7 +82,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: absolute;
   bottom: 3%;
   padding: 0 2.5vw;
   width: 100%;
