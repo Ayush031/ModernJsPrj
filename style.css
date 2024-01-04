@@ -4,11 +4,16 @@
   box-sizing: border-box;
   font-family: "General Sans Regular";
 }
+* a {
+  text-decoration: none;
+  color: white;
+}
 
 html,
 body {
   height: 100%;
   width: 100%;
+  background-color: black;
 }
 
 #main {
@@ -18,7 +23,6 @@ body {
 #home {
   width: 100%;
   height: 100vh;
-  background-color: black;
   color: white;
 }
 
@@ -73,4 +77,31 @@ body {
   font-size: 1vw;
   font-weight: 100;
   margin-top: 0.5vw;
+}
+
+#home-footer {
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 3%;
+  padding: 0 2.5vw;
+  width: 100%;
+}
+#home-footer .iconset {
+  display: flex;
+  gap: 5px;
+}
+#home-footer .iconset .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #888;
+}
+#home-footer .iconset .circle i {
+  color: black;
 }
