@@ -20,14 +20,12 @@ body {
 #main {
   width: 100%;
 }
-
-#home {
+#main #home {
   width: 100%;
   height: 100vh;
   color: white;
 }
-
-#nav {
+#main #home #nav {
   width: 100%;
   padding: 2rem 2.5rem;
   color: white;
@@ -37,16 +35,15 @@ body {
   font-weight: 100;
   letter-spacing: 1px;
 }
-#nav a {
+#main #home #nav a {
   font-size: 1.1rem;
   text-decoration: none;
   color: white;
 }
-
-#header {
+#main #home #header {
   margin-top: 90px;
 }
-#header h1 {
+#main #home #header h1 {
   font-family: "General Sans";
   font-size: 10.1vw;
   text-transform: uppercase;
@@ -55,32 +52,30 @@ body {
   margin-left: 40px;
   letter-spacing: 6px;
 }
-#header-text {
+#main #home #header-text {
   width: fit-content;
 }
-#header-text h1 {
+#main #home #header-text h1 {
   margin-left: 195px;
 }
-#header-text h4 {
+#main #home #header-text h4 {
   letter-spacing: 1.25px;
   text-align: right;
   text-transform: uppercase;
   font-size: 1rem;
   margin-top: 1rem;
 }
-
-#subheader {
+#main #home #subheader {
   margin-top: 100px;
   padding-right: 50px;
 }
-#subheader h5 {
+#main #home #subheader h5 {
   text-align: right;
   font-size: 1vw;
   font-weight: 100;
   margin-top: 0.5vw;
 }
-
-#home-footer {
+#main #home #home-footer {
   letter-spacing: 1px;
   display: flex;
   align-items: center;
@@ -90,11 +85,11 @@ body {
   padding: 0 2.5vw;
   width: 100%;
 }
-#home-footer .iconset {
+#main #home #home-footer .iconset {
   display: flex;
   gap: 5px;
 }
-#home-footer .iconset .circle {
+#main #home #home-footer .iconset .circle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,16 +98,15 @@ body {
   border-radius: 50%;
   background-color: #888;
 }
-#home-footer .iconset .circle i {
+#main #home #home-footer .iconset .circle i {
   color: black;
 }
-
-#section1 {
-  height: 100vh;
+#main #section1 {
+  height: 100%;
   width: 100%;
   padding: 186px 10vw 3vw 3vw;
 }
-#section1 .elem {
+#main #section1 .elem {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -120,56 +114,87 @@ body {
   padding: 3.5vw 0vw;
   border-top: 1px solid #888;
 }
-#section1 .elem h1 {
+#main #section1 .elem h1 {
   font-size: 7.35vw;
   opacity: 0.6;
   letter-spacing: 1px;
 }
-#section1 .elem img {
+#main #section1 .elem img {
   display: none;
   height: 43%;
   position: absolute;
   z-index: 999;
 }
-#section1 .elemBottom {
+#main #section1 .elemBottom {
   border: 1px solid #888;
 }
-
-.section2 {
+#main .section2 {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   gap: 6rem;
-  padding-left: 12rem;
+  padding: 6rem 0rem 6rem 12rem;
 }
-.section2-img {
+#main .section2-img {
   padding-top: 3rem;
 }
-.section2-img img {
+#main .section2-img img {
   border-radius: 50%;
   height: 16rem;
   width: auto;
 }
-.section2-text {
+#main .section2-text {
   padding-top: 7rem;
   flex-basis: 38%;
   letter-spacing: 1.2px;
 }
-.section2-text .span {
+#main .section2-text .span {
   opacity: 0.7;
   margin-bottom: 5px;
   font-size: 1vw;
 }
-.section2-text p {
+#main .section2-text p {
   font-size: 1.25vw;
   padding-bottom: 30px;
-  line-height: 1.5;
+  line-height: 1.4;
 }
-.section2-text a {
+#main .section2-text a {
   border: 1px solid #888;
   padding: 0.7rem;
   border-radius: 100px;
-  font-size: 12px;
+  font-size: 14px;
+}
+#main .footer {
+  width: 100%;
+  padding: 2.3rem;
+  padding-bottom: 1rem;
+}
+#main .footer-1 {
+  margin-bottom: 9rem;
+}
+#main .footer-1 p {
+  opacity: 0.7;
+  font-size: 1.05vw;
+  margin-bottom: 0.7rem;
+}
+#main .footer-1 a {
+  font-family: "General Sans Medium";
+}
+#main .footer-2 {
+  font-family: "General Sans Medium";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main .footer-2 .left {
+  flex-basis: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+#main .footer-2 .right {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: space-between;
 }
