@@ -1,0 +1,15 @@
+ANIMATIONS:
+
+For Smooth Scrolling:
+    1. Add locomotive.css file from github of locomotive smooth scrolling search.
+    2. Use JS of SMOOTH keyword from sam github page.
+    3. paste into script.js top and change the queryselector with wrapper id/class.
+    4. CDN from locomotive js cdn from search and url of locomotive.min.js is cdn.
+
+GSAP
+    1. 
+    2.
+    3.
+    4.
+
+Scroll Trigger
