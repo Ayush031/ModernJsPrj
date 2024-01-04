@@ -7,7 +7,7 @@ For Smooth Scrolling:
     4. CDN from locomotive js cdn from search and url of locomotive.min.js is cdn.
 
 GSAP
-    1. 
+    1. Attach CDN
     2.
     3.
     4.
