@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "General Sans Regular";
-
+    color: white;
     a {
         text-decoration: none;
         color: white;
@@ -106,5 +106,36 @@ body {
                 color: black;
             }
         }
+    }
+}
+
+#section1 {
+    height: 100vh;
+    width: 100%;
+    padding: 186px 10vw 3vw 3vw;
+
+    .elem {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 3.5vw 0vw;
+        border-top: 1px solid #888;
+
+        & h1 {
+            font-size: 7.35vw;
+            opacity: 0.6;
+            letter-spacing: 1px;
+        }
+
+        img {
+            display: none;
+            height: 43%;
+            position: absolute;
+            z-index: 999;
+        }
+    }
+    .elemBottom {
+        border: 1px solid #888;
     }
 }

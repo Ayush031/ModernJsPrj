@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "General Sans Regular";
+  color: white;
 }
 * a {
   text-decoration: none;
@@ -104,4 +105,32 @@ body {
 }
 #home-footer .iconset .circle i {
   color: black;
+}
+
+#section1 {
+  height: 100vh;
+  width: 100%;
+  padding: 186px 10vw 3vw 3vw;
+}
+#section1 .elem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3.5vw 0vw;
+  border-top: 1px solid #888;
+}
+#section1 .elem h1 {
+  font-size: 7.35vw;
+  opacity: 0.6;
+  letter-spacing: 1px;
+}
+#section1 .elem img {
+  display: none;
+  height: 43%;
+  position: absolute;
+  z-index: 999;
+}
+#section1 .elemBottom {
+  border: 1px solid #888;
 }
