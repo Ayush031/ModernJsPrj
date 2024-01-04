@@ -134,3 +134,42 @@ body {
 #section1 .elemBottom {
   border: 1px solid #888;
 }
+
+.section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  gap: 6rem;
+  padding-left: 12rem;
+}
+.section2-img {
+  padding-top: 3rem;
+}
+.section2-img img {
+  border-radius: 50%;
+  height: 16rem;
+  width: auto;
+}
+.section2-text {
+  padding-top: 7rem;
+  flex-basis: 38%;
+  letter-spacing: 1.2px;
+}
+.section2-text .span {
+  opacity: 0.7;
+  margin-bottom: 5px;
+  font-size: 1vw;
+}
+.section2-text p {
+  font-size: 1.25vw;
+  padding-bottom: 30px;
+  line-height: 1.5;
+}
+.section2-text a {
+  border: 1px solid #888;
+  padding: 0.7rem;
+  border-radius: 100px;
+  font-size: 12px;
+}
