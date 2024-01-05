@@ -3,10 +3,29 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
-function mouseFollower() {
+function mouseFollower(xscale, yscale) {
     window.addEventListener('mousemove', function (e) {
-        const circle = document.querySelector('#sticky-pointer');
-        circle.style.transform = `translate(${e.clientX - 4}px,${e.clientY - 4}px)`
+        document.querySelector('#sticky-pointer').style.transform = `translate(${e.clientX - 4}px,${e.clientY - 4}px) scale(${xscale}, ${yscale}) `;
+    });
+}
+var timeout;
+function mouseBubble() {
+    let xscale = 1;
+    let yscale = 1;
+    let xprev = 0;
+    let yprev = 0;
+
+    window.addEventListener('mousemove', function (e) {
+        clearTimeout(timeout);
+        xscale = gsap.utils.clamp(0.8, 1.2, e.clientX - xprev);
+        yscale = gsap.utils.clamp(0.8, 1.2, e.clientY - yprev);
+
+        xprev = e.clientX;
+        yprev = e.clientY;
+        mouseFollower(xscale, yscale);
+        timeout = setTimeout(() => {
+            document.querySelector('#sticky-pointer').style.transform = `translate(${e.clientX - 4}px,${e.clientY - 4}px) scale(1,1) `;
+        }, 100);
     });
 }
 
@@ -21,10 +40,18 @@ function firstPageanim() {
     }).to('.boundingElem', {
         y: 0,
         ease: Expo.easeInOut,
-        duration: 1.25,
-        stagger: .2
+        duration: 2,
+        stagger: .2,
+        delay: -1,
+    }).from('#home-footer', {
+        duration: 1.5,
+        y: -10,
+        opacity: 0,
+        ease: Expo.easeInOut,
+        delay: -1
     });
 }
 
-mouseFollower();
+// mouseFollower();
 firstPageanim();
+mouseBubble();
