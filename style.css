@@ -131,7 +131,7 @@ body {
   letter-spacing: 1px;
 }
 #main #section1 .elem img {
-  display: none;
+  opacity: 0;
   height: 110%;
   position: absolute;
   z-index: 999;
@@ -152,6 +152,7 @@ body {
   padding-top: 3rem;
 }
 #main .section2-img img {
+  position: absolute;
   border-radius: 50%;
   height: 16rem;
   width: auto;

@@ -55,3 +55,28 @@ function firstPageanim() {
 // mouseFollower();
 firstPageanim();
 mouseBubble();
+
+document.querySelectorAll('.elem').forEach(elem => {
+    elem.addEventListener('mouseleave', (e) => {
+        gsap.to(elem.querySelector('img'), {
+            opacity: 0,
+        });
+    });
+
+    var rotate = 0;
+    var diffrot = 0;
+
+    elem.addEventListener('mousemove', (e) => {
+        var diff = e.clientY - elem.getBoundingClientRect().top;
+        var diffx = e.clientX - elem.getBoundingClientRect().left;        
+        rotate = e.clientX;
+
+        gsap.to(elem.querySelector('img'), {
+            opacity: 1,
+            ease: Power1,
+            top: e.clientY,
+            left: e.clientX,
+            rotate: gsap.utils.clamp(-20, 20, e.clientX - rotate),
+        });
+    });
+});

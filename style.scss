@@ -138,10 +138,10 @@ body {
             }
 
             img {
-                display: none;
+                opacity: 0;
                 height: 110%;
                 position: absolute;
-                z-index: 999;
+                z-index: 999;                      
             }
         }
         .elemBottom {
@@ -160,6 +160,7 @@ body {
         &-img {
             padding-top: 3rem;
             img {
+                position: absolute;
                 border-radius: 50%;
                 height: 16rem;
                 width: auto;
