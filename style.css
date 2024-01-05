@@ -56,24 +56,31 @@ body {
   opacity: 0.6;
   margin-left: 40px;
   letter-spacing: 6px;
-}
-#main #home #header-text {
   width: fit-content;
 }
-#main #home #header-text h1 {
+#main #home #header-block {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+#main #home #header-block h1 {
   margin-left: 195px;
 }
-#main #home #header-text h4 {
-  letter-spacing: 1.25px;
+#main #home #header-block h4 {
   text-align: right;
   text-transform: uppercase;
-  font-size: 1rem;
   margin-top: 1rem;
+  letter-spacing: 1.25px;
+  font-size: 1rem;
 }
 #main #home #subheader {
-  margin-top: 100px;
+  margin-top: 70px;
   padding-right: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 #main #home #subheader h4 {
   text-align: right;
@@ -210,4 +217,12 @@ body {
   position: absolute;
   border-radius: 50%;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.bounding {
+  width: fit-content;
+  overflow: hidden;
+}
+.boundingElem {
+  transform: translateY(100%);
 }

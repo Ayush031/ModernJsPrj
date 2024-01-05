@@ -57,26 +57,33 @@ body {
                 opacity: 0.6;
                 margin-left: 40px;
                 letter-spacing: 6px;
-            }
-            &-text {
                 width: fit-content;
+            }
+            &-block {
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
                 h1 {
                     margin-left: 195px;
                 }
                 h4 {
-                    letter-spacing: 1.25px;
                     text-align: right;
                     text-transform: uppercase;
-                    font-size: 1rem;
                     margin-top: 1rem;
+                    letter-spacing: 1.25px;
+                    font-size: 1rem;
                 }
             }
         }
 
         #subheader {
-            margin-top: 100px;
+            margin-top: 70px;
             padding-right: 50px;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
             h4 {
                 text-align: right;
                 margin-top: 0.5vw;
@@ -222,5 +229,13 @@ body {
     width: 10px;
     position: absolute;
     border-radius: 50%;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.bounding {
+    width: fit-content;
+    overflow: hidden;
+    &Elem {
+        transform: translateY(100%);
+    }
 }
